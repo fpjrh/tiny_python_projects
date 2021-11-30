@@ -1,24 +1,20 @@
 #!/usr/bin/env python3
 """
-Author : fpjrh <fjansen@fjansen>
+Author : fpjrh <fjansen@redhat.com>
 Date   : 2021-11-29
-Purpose: Rock the Casbah
+Purpose: Say hello to the world
 """
 
 import argparse
-
-
 # --------------------------------------------------
 def get_args():
     """Get command-line arguments"""
 
     parser = argparse.ArgumentParser(
-        description='Rock the Casbah',
-        formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+        description='Say hello')
 
-    parser.add_argument('positional',
-                        metavar='str',
-                        help='A positional argument')
+    parser.add_argument('name',
+                        help='Name to greet')
 
     parser.add_argument('-a',
                         '--arg',
